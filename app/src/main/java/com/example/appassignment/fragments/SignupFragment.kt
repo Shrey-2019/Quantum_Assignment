@@ -16,6 +16,7 @@ import com.google.android.material.textfield.TextInputEditText
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
+import com.hbb20.CountryCodePicker
 import java.time.Duration
 
 class SignupFragment : Fragment() {
@@ -27,6 +28,7 @@ class SignupFragment : Fragment() {
     private lateinit var button: TextView
     private lateinit var checkBox: CheckBox
     private lateinit var db: FirebaseFirestore
+    private lateinit var ccp: CountryCodePicker
 
     @SuppressLint("MissingInflatedId")
     override fun onCreateView(
@@ -40,12 +42,13 @@ class SignupFragment : Fragment() {
         name = view.findViewById(R.id.create_name_textEdit)
         contact = view.findViewById(R.id.contact_textEdit)
         checkBox = view.findViewById(R.id.term_condition_checkbox)
+        ccp = view.findViewById(R.id.countryCode)
         db = Firebase.firestore
 
         button.setOnClickListener {
             if (EmailValidator.emailValidator(email, context) && checkBox.isChecked){
                 val nameString: String= name.text.toString()
-                val contactString: String= contact.text.toString()
+                val contactString: String=  contact.text.toString()
                 val pwdString: String= pwd.text.toString()
                 if (!nameString.isEmpty() && !contactString.isEmpty() && !pwdString.isEmpty()){
                     addUser(nameString, email.text.toString(), contactString.toInt(), pwdString)
