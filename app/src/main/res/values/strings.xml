@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">App Assignment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login_text">login</string>
+    <string name="signup_text">Signup</string>
+    <string name="login_head_text">Sign In into your \nAccount</string>
+    <string name="email_text">Email</string>
+    <string name="email_hint_text">johndoe@gmail.com</string>
+    <string name="password_text">Password</string>
+    <string name="forgot_password_text">Forgot Password?</string>
+    <string name="login_with_text">Login With</string>
+    <string name="register_now_text">Don\'t have an Account ?</string>
+    <string name="Register_now">Register Now</string>
+    <string name="signup_head_text">Create an \nAccount</string>
+    <string name="name_text">Name</string>
+    <string name="name_hint_text">John Doe</string>
+    <string name="contact_text">Contact</string>
+    <string name="contact_hint_text">9876543210</string>
+    <string name="password_hint_text">********</string>
+    <string name="terms_condition_text">I agree with</string>
+    <string name="t_d_text"><u><![CDATA[Terms & Conditions]]></u></string>
+    <string name="account_already_text">Already have an Account ? </string>
+    <string name="signin_text">Sign In!</string>
+    <string name="Register_text">Register</string>
+    <string name="search_hint_text">Search in feed</string>
+    <string name="uploaddate_text">uploadDate</string>
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/search_textLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="@string/search_hint_text"
+        android:textColorHint="@color/blue_theme"
+        app:startIconDrawable="@drawable/search_icon"
+        app:startIconTint="@color/blue_theme"
+        app:boxStrokeColor="@color/blue_theme"
+        app:hintTextColor="@color/blue_theme"
+        android:elevation="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/name_textEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:backgroundTint="@color/white" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/mRecyclerNews"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/search_textLayout"
+        tools:itemCount="1" />
+
+
+
+</RelativeLayout>
